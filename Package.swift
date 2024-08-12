@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version: String = "1.19.0"
-let checksum: String = "f25fe92c3f80e054d274f1fe6b36addd1c6a41b3bc6706ce3e647a66e9ee49ff"
+let version: String = "1.24.0-beta"
+let checksum: String = "224a2a41659416f280956eed13a78de34b30c0a731dbdca2b7538d3b447dd716"
 
 let dependencies: [Target.Dependency] = [
     .product(name: "WebRTC", package: "eidwebrtc-spm"),
@@ -21,7 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.1.3"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "1.1.2000"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", from: "3.1.5004"),
         .package(url: "https://gitlab.electronicid.eu/eid-public/eid-sdk/eidwebrtc-spm", from: "1.1.35")
     ],
     targets: [
